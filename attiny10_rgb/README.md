@@ -22,3 +22,5 @@ If you can read regex, here's what you can send [rgbc]{1}[0-9]{3}.
 r = red, g = green, b = blue, and afterwards 3 decimals (000-255). Example : r200 
 
 c = clear. Example : c000
+
+In photos/ one can find an example of r050 followed by b050.
