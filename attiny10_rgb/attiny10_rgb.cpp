@@ -2,9 +2,9 @@
  * attiny10_rgb.cpp
  *
  * Created: 5/6/2017 1:30:50 PM
- * Author : Mihai
+ * Author : Mihai Galos
  *
- * Drive an RGB LED using Attiny10.
+ * Drive an RGB led using Attiny10.
  * Send desired color over software uart to the Attiny10.
  * 
  */ 
@@ -14,8 +14,7 @@
 #include <string.h> // for memset()
 #include <stdlib.h> // for atoi()
 
-#include "SoftwareUart.h"
-#include "Test_SoftwareUart.h"
+#include "Drivers/AVR/SoftwareUart/SoftwareUart.h"
 
 volatile uint8_t pwmTickCount_ = 0;
 
