@@ -1,5 +1,7 @@
 # Fun with an AtTiny10 : control a RGB led via Software UART
 
+Breakout for AtTiny10, i.e. : hardware/TinyOne.
+
 ## Prerequisites
 
 - make.exe in PATH
