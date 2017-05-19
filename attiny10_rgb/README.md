@@ -1,10 +1,22 @@
-# Prerequisites
+# Fun with an AtTiny10 : control a RGB led via Software UART
+
+## Prerequisites
 
 - make.exe in PATH
 - avr-objcopy.exe in PATH
-- environment variable Tiny10DescriptionFiles pointing to the Attiny10 
+- environment variable Tiny10DescriptionFiles pointing to the AtTiny10 
 base description files (i.e. : C:\Program Files\Atmel\Studio\7.0\Packs\atmel\ATtiny_DFP\1.1.102)
 
-# How to
+## How to
+
+### Building 
 
 Call make all from a bash / batch console to build. Call make clean to remove a previous build.
+
+### Controling
+
+Hit up a terminal and send the tiny commands via Software UART. Default settings are 8N1@38400bps.
+
+If you can read regex, here's what you can send [rgbc]{1}[0-9]{3}.
+r = red, g = green, b = blue, and afterwards 3 decimals (000-255). Example : r200 
+c = clear. Example : c000
