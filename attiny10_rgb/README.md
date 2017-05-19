@@ -27,4 +27,4 @@ r = red, g = green, b = blue, and afterwards 3 decimals (000-255). Example : r20
 
 c = clear. Example : c000
 
-In photos/ one can find an example of r050 followed by b050.
+In photos/ one can find an example of r050 followed by b050 (red + blue = magenta).
