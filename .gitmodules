@@ -1,3 +1,6 @@
 [submodule "Drivers"]
 	path = Drivers
 	url = https://github.com/mihaigalos/Drivers
+[submodule "attiny10_rgb/hardware/TinyOne"]
+	path = attiny10_rgb/hardware/TinyOne
+	url = https://github.com/mihaigalos/TinyOne
