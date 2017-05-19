@@ -1,8 +1,10 @@
 # Fun with an AtTiny10 : control a RGB led via Software UART
 
-Breakout for AtTiny10, i.e. : hardware/TinyOne.
+
 
 ## Prerequisites
+
+Breakout for AtTiny10, i.e. : hardware/TinyOne.
 
 - make.exe in PATH
 - avr-objcopy.exe in PATH
