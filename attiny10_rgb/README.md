@@ -6,8 +6,7 @@
 
 
 - breakout for AtTiny10, i.e. : hardware/TinyOne.
-- RESET fuse disabled on the AtTiny10. Necessary since Reset pin used for uart,
-other pins used for the RGB
+- RESET disabled in the fuse on the AtTiny10 (i.e. : 0xFE). Necessary since Reset pin used for uart, other pins used for the RGB
 - make.exe in PATH
 - avr-objcopy.exe in PATH
 - environment variable Tiny10DescriptionFiles pointing to the AtTiny10 
