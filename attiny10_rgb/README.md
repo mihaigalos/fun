@@ -7,4 +7,4 @@ base description files (i.e. : C:\Program Files\Atmel\Studio\7.0\Packs\atmel\ATt
 
 # How to
 
-Call make all from a bash / batch console to build. Call make clean to remove a previous build
+Call make all from a bash / batch console to build. Call make clean to remove a previous build.

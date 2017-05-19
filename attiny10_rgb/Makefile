@@ -1,9 +1,6 @@
-################################################################################
-# Automatically-generated file. Do not edit!
-################################################################################
-
 PROJECT = attiny10_rgb
 MICROCONTROLLER = attiny10
+
 SHELL := cmd.exe
 RM := rm -rf
 
@@ -88,14 +85,14 @@ endif
 SoftwareUart.o: ../Drivers/AVR/SoftwareUart/SoftwareUart.cpp
 	@echo Building file: $<
 	@echo Invoking: AVR8/GNU C Compiler : 4.9.2
-	$(QUOTE)avr-g++.exe$(QUOTE) -funsigned-char -funsigned-bitfields -DNDEBUG  -I"%TinyDescriptionFiles%\include" -I"../.."  -Os -ffunction-sections -fdata-sections -fpack-struct -fshort-enums -Wall -mmcu=$(MICROCONTROLLER) -B "%TinyDescriptionFiles%\gcc\dev\$(MICROCONTROLLER)" -c -MD -MP -MF "$(@:%.o=%.d)" -MT"$(@:%.o=%.d)" -MT"$(@:%.o=%.o)"   -o "$@" "$<" 
+	$(QUOTE)avr-g++.exe$(QUOTE) -funsigned-char -funsigned-bitfields -DNDEBUG  -I"%TinyDescriptionFiles%\include" -I"../.."  -O1 -ffunction-sections -fdata-sections -fpack-struct -fshort-enums -Wall -mmcu=$(MICROCONTROLLER) -B "%TinyDescriptionFiles%\gcc\dev\$(MICROCONTROLLER)" -c -MD -MP -MF "$(@:%.o=%.d)" -MT"$(@:%.o=%.d)" -MT"$(@:%.o=%.o)"   -o "$@" "$<"
 	@echo Finished building: $<
 	@echo.
 
 ./%.o: ./%.cpp
 	@echo Building file: $<
 	@echo Invoking: AVR8/GNU C Compiler : 4.9.2
-	$(QUOTE)avr-g++.exe$(QUOTE) -funsigned-char -funsigned-bitfields -DNDEBUG  -I"%TinyDescriptionFiles%\include" -I"../.."  -Os -ffunction-sections -fdata-sections -fpack-struct -fshort-enums -Wall -mmcu=$(MICROCONTROLLER) -B "%TinyDescriptionFiles%\gcc\dev\$(MICROCONTROLLER)" -c -MD -MP -MF "$(@:%.o=%.d)" -MT"$(@:%.o=%.d)" -MT"$(@:%.o=%.o)"   -o "$@" "$<" 
+	$(QUOTE)avr-g++.exe$(QUOTE) -funsigned-char -funsigned-bitfields -DNDEBUG  -I"%TinyDescriptionFiles%\include" -I"../.."  -O1 -ffunction-sections -fdata-sections -fpack-struct -fshort-enums -Wall -mmcu=$(MICROCONTROLLER) -B "%TinyDescriptionFiles%\gcc\dev\$(MICROCONTROLLER)" -c -MD -MP -MF "$(@:%.o=%.d)" -MT"$(@:%.o=%.d)" -MT"$(@:%.o=%.o)"   -o "$@" "$<"
 	@echo Finished building: $<
 	@echo.
 	
@@ -127,7 +124,7 @@ all: $(OUTPUT_FILE_PATH) $(ADDITIONAL_DEPENDENCIES)
 $(OUTPUT_FILE_PATH): $(OBJS) $(USER_OBJS) $(LIB_DEP) $(LINKER_SCRIPT_DEP)
 	@echo Building target: $@
 	@echo Invoking: AVR8/GNU Linker : 4.9.2
-	$(QUOTE)avr-g++.exe$(QUOTE) -o$(OUTPUT_FILE_PATH_AS_ARGS) $(OBJS_AS_ARGS) $(USER_OBJS) $(LIBS) -Wl,-Map="$(PROJECT).map" -Wl,--start-group -Wl,-lm  -Wl,--end-group -Wl,--gc-sections -mmcu=$(MICROCONTROLLER) -B "%TinyDescriptionFiles%\gcc\dev\$(MICROCONTROLLER)"  
+	$(QUOTE)avr-g++.exe$(QUOTE) -o$(OUTPUT_FILE_PATH_AS_ARGS) $(OBJS_AS_ARGS) $(USER_OBJS) $(LIBS) -Wl,-Map="$(PROJECT).map" -Wl,--start-group -Wl,-lm  -Wl,--end-group -Wl,--gc-sections -mmcu=$(MICROCONTROLLER) -B "%TinyDescriptionFiles%\gcc\dev\$(MICROCONTROLLER)"
 	@echo Finished building target: $@
 	@echo.
 	"avr-objcopy.exe" -O ihex -R .eeprom -R .fuse -R .lock -R .signature -R .user_signatures  "$(PROJECT).elf" "$(PROJECT).hex"
@@ -143,4 +140,3 @@ clean:
 	-$(RM) $(OBJS_AS_ARGS) $(EXECUTABLES)  
 	-$(RM) $(C_DEPS_AS_ARGS)   
 	rm -rf "$(PROJECT).elf" "$(PROJECT).a" "$(PROJECT).hex" "$(PROJECT).lss" "$(PROJECT).eep" "$(PROJECT).map" "$(PROJECT).srec" "$(PROJECT).usersignatures"
-	
