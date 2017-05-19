@@ -4,8 +4,8 @@
 
 ## Prerequisites
 
-Breakout for AtTiny10, i.e. : hardware/TinyOne.
 
+- breakout for AtTiny10, i.e. : hardware/TinyOne.
 - make.exe in PATH
 - avr-objcopy.exe in PATH
 - environment variable Tiny10DescriptionFiles pointing to the AtTiny10 
