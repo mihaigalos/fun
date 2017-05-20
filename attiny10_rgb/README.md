@@ -20,7 +20,7 @@ Call **make all** from a bash / batch console to build. Call **make clean** to r
 
 ### Control
 
-Hit up a terminal and send the tiny commands via Software UART. Default settings are 8N1@38400bps.
+Hit up a terminal and send the tiny commands via a USB to UART adapter. The AtTiny10 speaks a custom-rolled implementation of UART, which can be found [here][1]. Default settings are 8N1@38400bps.
 
 If you can read regex, here's what you can send [rgbc]{1}[0-9]{3}.
 
@@ -35,4 +35,5 @@ Here's an example of r050 followed by b050 (red + blue = magenta):
 
 ![r050_b050][r050_b050]
 
+[1]: https://github.com/mihaigalos/Drivers/tree/52bb31ab689eac574f0edddc15ebfab5033ef556/AVR/SoftwareUart
 [r050_b050]:  https://github.com/mihaigalos/fun/blob/master/attiny10_rgb/photos/r050_b050.jpg
