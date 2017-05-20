@@ -30,4 +30,9 @@ c = clear. Example : c000
 
 Decimals represent light intensity, with 000 being off and 255 being maximum on.
 
-In photos/ one can find an example of r050 followed by b050 (red + blue = magenta).
+## How it looks like
+Here's an example of r050 followed by b050 (red + blue = magenta):
+
+![r050_b050][r050_b050]
+
+[r050_b050] https://github.com/mihaigalos/fun/blob/master/attiny10_rgb/photos/r050_b050.jpg
