@@ -17,7 +17,7 @@ Call **make all** from a bash / batch console to build. Call **make clean** to r
 
 ### Control
 
-Hit up a terminal and send the tiny commands via an USB to UART adapter. The AtTiny10 speaks a custom-rolled implementation of UART, which can be found [here][1]. Default settings are 8N1@38400bps.
+Hit up a terminal and send the tiny commands via an USB to UART adapter. The AtTiny10 speaks a custom-rolled implementation of UART, which can be found [here][1]. Default settings are 38400(bps)/8N1.
 
 If you can read regex, here's what you can send: [rgbc]{1}[0-9]{3}.
 
