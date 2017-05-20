@@ -35,4 +35,4 @@ Here's an example of r050 followed by b050 (red + blue = magenta):
 
 ![r050_b050][r050_b050]
 
-[r050_b050] https://github.com/mihaigalos/fun/blob/master/attiny10_rgb/photos/r050_b050.jpg
+[r050_b050]:  https://github.com/mihaigalos/fun/blob/master/attiny10_rgb/photos/r050_b050.jpg
