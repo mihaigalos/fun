@@ -14,14 +14,14 @@
 #include <stdlib.h> // for atoi()
 #include <string.h> // for memset()
 
-#include "Drivers/AVR/SoftwareUart/SoftwareUart.h"
-
 #include "config.h"
-volatile uint8_t pwmTickCount_ = 0;
+#include "Drivers/AVR/SoftwareUart/SoftwareUart.h"
 
 volatile uint8_t r_intensity_ = 0;
 volatile uint8_t g_intensity_ = 0;
 volatile uint8_t b_intensity_ = 0;
+
+volatile uint8_t pwmTickCount_ = 0;
 
 uint8_t uart_buffer_[4];
 
