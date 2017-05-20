@@ -1,9 +1,6 @@
 # Fun with an AtTiny10 : control a RGB led via Software UART
 
-
-
 ## Prerequisites
-
 
 - breakout for AtTiny10, i.e. : hardware/TinyOne.
 - RESET disabled in the fuse on the AtTiny10 (i.e. : 0xFE). Necessary since Reset pin used for uart, other pins used for the RGB
@@ -20,9 +17,9 @@ Call **make all** from a bash / batch console to build. Call **make clean** to r
 
 ### Control
 
-Hit up a terminal and send the tiny commands via a USB to UART adapter. The AtTiny10 speaks a custom-rolled implementation of UART, which can be found [here][1]. Default settings are 8N1@38400bps.
+Hit up a terminal and send the tiny commands via an USB to UART adapter. The AtTiny10 speaks a custom-rolled implementation of UART, which can be found [here][1]. Default settings are 8N1@38400bps.
 
-If you can read regex, here's what you can send [rgbc]{1}[0-9]{3}.
+If you can read regex, here's what you can send: [rgbc]{1}[0-9]{3}.
 
 r = red, g = green, b = blue, and afterwards 3 decimals (000-255). Example : r200 
 
